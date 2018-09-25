@@ -1,6 +1,7 @@
 #pragma once
 #include "Module.h"
 #include "Globals.h"
+#include "Box2D/Box2D/Box2D.h"
 
 class ModulePhysics : public Module
 {
@@ -14,6 +15,8 @@ public:
 	bool CleanUp();
 
 private:
+
+	b2World* world;
 
 	bool debug;
 };
